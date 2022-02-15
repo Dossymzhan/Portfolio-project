@@ -43,7 +43,7 @@ body {
   background-color: #000;
   font-family: "Inter", sans-serif;
   font-size: 20px;
-  line-height: 2;
+  /* line-height: 2;  */
   color: #fff;
 }
 
@@ -63,3 +63,51 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
+
+/* Header styles start */
+
+.header {
+}
+
+.header__container {
+  display: flex;
+  min-height: 90px;
+  align-items: center;
+  background: url("../assets/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+.header__logo {
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.menu {
+}
+
+.nav__list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav__item {
+  margin-left: 20px;
+}
+
+.nav_link {
+}
+
+.lang {
+  margin-left: 20px;
+}
+
+.lang__en {
+}
+
+.lang__ru {
+}
+
+/* Header styles end */
