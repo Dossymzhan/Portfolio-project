@@ -44,7 +44,7 @@ body {
   background-color: #000;
   font-family: "Inter", sans-serif;
   font-size: 20px;
-  /* line-height: 2;  */
+  line-height: 2;
   color: #fff;
 }
 
@@ -67,9 +67,6 @@ body {
 
 /* Header styles start */
 
-.header {
-}
-
 .header__container {
   display: flex;
   min-height: 90px;
@@ -77,9 +74,6 @@ body {
   background: url("../assets/img/bg.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
-}
-
-.header__logo {
 }
 
 .header__logo:hover {
@@ -90,9 +84,6 @@ body {
 
 .nav {
   margin-left: auto;
-}
-
-.menu {
 }
 
 .nav__list {
@@ -134,19 +125,20 @@ body {
 
 /* Main styles start */
 
-.main {
-}
-
-.hero {
-}
-
 .hero__container {
   display: flex;
   min-height: 820px;
-  flex-direction: column;
+
   background-image: url("../assets/img/bg.jpg");
   background-position: center -90px;
   background-repeat: no-repeat;
+}
+
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+  margin-top: 160px;
 }
 
 .hero__title {
@@ -156,11 +148,70 @@ body {
   font-size: 60px;
   line-height: 120px;
   color: #fff;
+  margin-bottom: 10px;
 }
 
-.hero__button {
-  display: flex;
-  justify-content: flex-start;
-  flex: 0 0 220px;
+.hero__subtitle {
+  margin-bottom: 25px;
 }
+
+.button {
+  background: #bdae82;
+  width: 220px;
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 20px;
+  color: #000;
+  line-height: inherit;
+  padding: 8px auto 7px auto;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+}
+
+.button_transparent {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #bdae82;
+}
+
+.button_transparent:hover {
+  background: #bdae82;
+  border: none;
+  color: #000;
+}
+
+.section__title-wrapper {
+  width: 50%;
+  margin: 100px auto 60px auto;
+  text-align: center;
+  background-image: linear-gradient(
+    to top,
+    #000 39px,
+    #bdae82 39px,
+    #bdae82 41px,
+    #000 41px
+  );
+}
+
+.section__title {
+  display: inline;
+  font-family: "Merriweather", sans-serif;
+  font-size: 40px;
+  line-height: 80px;
+  font-weight: 700;
+  padding: 0 20px;
+  color: #bdae82;
+  background-color: #000;
+}
+
+.skills__items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skill__item {
+}
+
 /* Main styles end  */
