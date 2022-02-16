@@ -11,6 +11,7 @@
 html,
 body {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -81,6 +82,12 @@ body {
 .header__logo {
 }
 
+.header__logo:hover {
+  transition: 0.3s;
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+}
+
 .nav {
   margin-left: auto;
 }
@@ -98,10 +105,17 @@ body {
 }
 
 .nav_link {
+  line-height: 50px;
+}
+
+.nav_link:hover {
+  transition: 0.3s;
+  color: #bdae82;
 }
 
 .lang {
   margin-left: 20px;
+  font-weight: 700;
 }
 
 .lang__en {
@@ -110,4 +124,43 @@ body {
 .lang__ru {
 }
 
+.lang__en:hover,
+.lang__ru:hover {
+  transition: 0.3s;
+  color: #bdae82;
+}
+
 /* Header styles end */
+
+/* Main styles start */
+
+.main {
+}
+
+.hero {
+}
+
+.hero__container {
+  display: flex;
+  min-height: 820px;
+  flex-direction: column;
+  background-image: url("../assets/img/bg.jpg");
+  background-position: center -90px;
+  background-repeat: no-repeat;
+}
+
+.hero__title {
+  font-family: "Merriweather", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 120px;
+  color: #fff;
+}
+
+.hero__button {
+  display: flex;
+  justify-content: flex-start;
+  flex: 0 0 220px;
+}
+/* Main styles end  */
