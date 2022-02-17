@@ -229,4 +229,20 @@ body {
   font-weight: bold;
   margin-bottom: 20px;
 }
+
+.portfolio__buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 60px;
+}
+
+.portfolio__items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
 /* Main styles end  */
