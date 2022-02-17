@@ -355,3 +355,24 @@ body {
 }
 
 /* Main styles end  */
+
+/* Footer styles start */
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+}
+
+.github {
+  display: flex;
+  gap: 20px;
+}
+
+.social {
+  display: flex;
+  gap: 20px;
+}
+
+/* Footer styles end */
