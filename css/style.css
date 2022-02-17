@@ -245,4 +245,17 @@ body {
   gap: 25px;
 }
 
+.video__player {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video__button {
+  position: absolute;
+  background: none;
+  cursor: pointer;
+}
+
 /* Main styles end  */
