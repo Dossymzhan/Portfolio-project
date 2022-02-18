@@ -109,12 +109,6 @@ body {
   font-weight: 700;
 }
 
-.lang__en {
-}
-
-.lang__ru {
-}
-
 .lang__en:hover,
 .lang__ru:hover {
   transition: 0.3s;
@@ -415,6 +409,7 @@ body {
 @media (max-width: 768px) {
   .header__container {
     padding: 0 60px;
+    background-size: 75%;
   }
 
   .hero__container {
@@ -422,7 +417,7 @@ body {
     background-image: url("../assets/img/bg.jpg");
     background-position: center -90px;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 768px;
   }
 
   .hero__text {
@@ -448,8 +443,5 @@ body {
 
   .section__title-wrapper {
     margin: 80px auto 36px auto;
-  }
-
-  .section__title {
   }
 }
