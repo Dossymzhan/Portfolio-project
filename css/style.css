@@ -305,6 +305,7 @@ body {
   background: url("../assets/img/contacts-bg.jpg");
   background-size: auto;
   background-position: center center;
+  background-repeat: no-repeat;
   height: 700px;
 }
 
@@ -368,6 +369,12 @@ body {
 .github {
   display: flex;
   gap: 20px;
+}
+
+.github__page:hover,
+.rs:hover {
+  color: #bdae82;
+  transition: 0.3s;
 }
 
 .social {
