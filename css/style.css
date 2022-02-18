@@ -153,6 +153,7 @@ body {
 
 .hero__subtitle {
   margin-bottom: 25px;
+  width: 470px;
 }
 
 .button {
@@ -383,3 +384,72 @@ body {
 }
 
 /* Footer styles end */
+
+/* Adaptive */
+
+/* Экраны до 1440px */
+@media (max-width: 1440px) {
+  .skills__items {
+    justify-content: space-evenly;
+  }
+
+  .skill__item {
+    margin-bottom: 30px;
+  }
+
+  .portfolio__items {
+    justify-content: space-evenly;
+  }
+
+  .video__player {
+    overflow: hidden;
+  }
+
+  .price__items {
+    justify-content: space-evenly;
+  }
+}
+
+/* Планшеты до 768px */
+
+@media (max-width: 768px) {
+  .header__container {
+    padding: 0 60px;
+  }
+
+  .hero__container {
+    min-height: 500px;
+    background-image: url("../assets/img/bg.jpg");
+    background-position: center -90px;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .hero__text {
+    margin-top: 78px;
+    margin-left: 40px;
+  }
+
+  .hero__title {
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 64px;
+  }
+
+  .hero__subtitle {
+    line-height: 24px;
+    width: 390px;
+    margin-bottom: 54px;
+  }
+
+  .button {
+    height: 54px;
+  }
+
+  .section__title-wrapper {
+    margin: 80px auto 36px auto;
+  }
+
+  .section__title {
+  }
+}
