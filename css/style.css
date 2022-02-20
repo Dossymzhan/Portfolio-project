@@ -620,11 +620,19 @@ body {
   }
 }
 
-/* Phones up to 320px */
+/* Phones up to 340px */
 
 @media (max-width: 340px) {
   .header__container {
     padding: 0 20px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  #nav-list {
+    display: none;
   }
 
   .menu__btn {
