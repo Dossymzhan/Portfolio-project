@@ -422,7 +422,7 @@ body {
 
 /* Планшеты до 768px */
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .header__container {
     padding: 0 60px;
     /* background-position: -5px -30px; */
@@ -627,11 +627,7 @@ body {
     padding: 0 20px;
   }
 
-  body {
-    overflow-x: hidden;
-  }
-
-  #nav-list {
+  #nav__list {
     display: none;
   }
 
