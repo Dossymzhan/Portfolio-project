@@ -621,7 +621,7 @@ body {
 
 /* Phones up to 340px */
 
-@media (max-width: 340px) {
+@media (max-width: 470px) {
   .header__container {
     padding: 0 20px;
   }
