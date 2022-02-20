@@ -611,12 +611,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translateX(100%);
+    display: none;
     transition: transform 0.5s ease-in;
   }
 
   .nav__open {
-    transform: translateX(0%);
+    display: flex;
   }
 }
 
@@ -625,10 +625,6 @@ body {
 @media (max-width: 340px) {
   .header__container {
     padding: 0 20px;
-  }
-
-  #nav__list {
-    display: none;
   }
 
   .menu__btn {
