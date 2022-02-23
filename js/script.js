@@ -11,13 +11,15 @@ const portfolioImages = document.querySelectorAll(".portfolio__item");
 
 const portfolioBtns = document.querySelector(".portfolio__buttons");
 
-portfolioBtns.addEventListener("click", function() {
-  function changeImage(e) {
-    if (e.target.classList.contains("button_transparent")) {
-      portfolioImages.forEach(
-        (img, index) =>
-          (img.src = `./assets/img/${dataset.season}/${index + 1}.jpg`)
-      );
-    }
+portfolioBtns.addEventListener("click", changeImage);
+
+function changeImage(event) {
+  if (event.target.classList.contains("button_transparent")) {
+    portfolioImages.forEach(
+      (img, index) =>
+        (img.src = `./assets/img/${event.target.dataset.season}/${
+          index + 1
+        }.jpg`)
+    );
   }
-});
+}
