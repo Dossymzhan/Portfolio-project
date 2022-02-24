@@ -64,7 +64,7 @@ const i18Obj = {
       'summer': 'Лето',
       'autumn': 'Осень',
       'price-title-standart': 'Стандарт', 
-      'price-title-premium': 'Премиуем',
+      'price-title-premium': 'Премиум',
       'price-title-gold': 'Золото',
       'price-description-1-span-1': 'Одна локация',
       'price-description-1-span-2': '120 цветных фото',
