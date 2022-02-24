@@ -194,6 +194,11 @@ body {
   color: #000;
 }
 
+.active {
+  background-color: #bdae82;
+  color: #000;
+}
+
 .section__title-wrapper {
   width: 50%;
   margin: 100px auto 60px auto;

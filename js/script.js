@@ -1,7 +1,9 @@
 // NAVIGATION MENU
 
 const menuBtn = document.querySelector(".menu__btn");
+
 const nav = document.querySelector(".nav__list");
+
 menuBtn.addEventListener("click", () => {
   menuBtn.classList.toggle("open");
   nav.classList.toggle("nav__open");
@@ -26,14 +28,17 @@ function changeImage(event) {
   }
 }
 
-// CACHE IMAGES
+// ACTIVE CLASS ON BUTTONS
 
-const seasons = ["winter", "spring", "summer", "autumn"];
+const btnActive = document.querySelectorAll(".button_transparent");
 
-function preloadImages() {
-  for (let i = 1; i <= 6; i++) {
-    const img = new Image();
-    img.src = `./assets/img/${seasons[i]}/${i}.jpg`;
-  }
-}
-preloadImages();
+btnActive.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    btnActive.forEach((el) => {
+      el.classList.remove("active");
+    });
+    btn.classList.add("active");
+  });
+});
+
+
