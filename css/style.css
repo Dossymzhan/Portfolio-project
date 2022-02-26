@@ -115,6 +115,10 @@ body {
   color: #bdae82;
 }
 
+.active-lang {
+  color: #bdae82;
+}
+
 .hamburger {
   background: none;
 }

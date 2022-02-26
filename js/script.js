@@ -43,4 +43,46 @@ btnActive.forEach((btn) => {
 
 // TRANSLATE
 
+import i18Obj from "./translate.js";
+
+const translateAttr = document.querySelectorAll("[data-i18n]");
+
+const langEn = document.querySelector(".lang__en");
+const langRu = document.querySelector(".lang__ru");
+
+function getTranslate(lang) {
+  translateAttr.forEach(function (el) {
+    el.textContent = i18Obj[lang][el.dataset.i18n];
+  });
+}
+
+langEn.addEventListener("click", (e) => {
+  e.preventDefault();
+  getTranslate("en");
+});
+langRu.addEventListener("click", (e) => {
+  e.preventDefault();
+  getTranslate("ru");
+});
+
+// ACTIVE LANGUAGE
+
+const langActive = document.querySelectorAll(".lng");
+
+langActive.forEach((lng) => {
+  lng.addEventListener("click", (e) => {
+    langActive.forEach((el) => {
+      el.classList.remove("active-lang");
+    });
+    lng.classList.add("active-lang");
+  });
+});
+
+// CHANGE THEME
+
+
+
+
+
+
 
