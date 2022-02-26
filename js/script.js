@@ -80,9 +80,11 @@ langActive.forEach((lng) => {
 
 // CHANGE THEME
 
+const changeClass = ["skills", "portfolio", "video", "price"];
+const theme = document.querySelector(".theme");
 
-
-
-
+changeClass.forEach(function (el) {
+  el.classList.toggle("light-theme");
+});
 
 

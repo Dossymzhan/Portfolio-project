@@ -633,6 +633,13 @@ body {
 @media (max-width: 470px) {
   .header__container {
     padding: 0 20px;
+    background-position: 20px 100px;
+    background-size: auto 350px;
+  }
+
+  .hero__container {
+    background-position: 20px 100px;
+    background-size: auto 350px;
   }
 
   .menu__btn {
@@ -686,4 +693,20 @@ body {
   .video__button img {
     width: 50px;
   }
+}
+
+/* LIGHT THEME */
+
+.light-theme {
+  background-color: #fff;
+  color: #000;
+}
+
+.light-theme:hover {
+  color: #000;
+}
+
+.theme {
+  margin-left: 20px;
+  cursor: pointer;
 }
